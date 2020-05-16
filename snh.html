@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title>portfolio</title>
+		<meta charset="utf8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<link rel='stylesheet' type="text/css" href="css/style.css">
+		
+	</head>
+
+<body>
+	
+<div id=container>
+		<nav>
+
+			<div id="logo">
+				<a href="snh.html"><img src="css/logo.jpg" height="40px" width=80px></a>
+			</div>
+			
+				<div id="menu-bar">
+				
+				<div id='bar1'></div> 
+				<div id='bar2'></div>
+				<div id='bar3'></div>
+			
+			</div>
+			
+			
+
+			<ul class="nav-links">
+				<li class='active'><span class='active'></span><a href='snh.html'>HOME</a></li>
+				<li><span></span><a href='myskills.html'>MY SKILLS</a></li>
+				<li><span></span><a href='gallery.html'>ART GALLERY</a></li>
+				<li><span></span><a href='css/res.pdf'>RESUME</a></li>
+			</ul>
+		
+
+		</nav>
+		
+		
+		<header>
+			<div id="false-navbar">
+			</div>
+
+		 <div class="profile">
+		 	<div id="photo">
+		 		<img src='css/shreyasback.JPG' >
+		 
+		 	</div>
+		 </div>
+
+	 <div id="welcome" >
+		 
+		 <div class='title'>	
+		 
+		 	<h1>WELCOME BUDDY!!</h1>
+		 
+		 </div>
+		 
+		 <div class='subtitle'>	
+		 
+		 	<h2>TO MY WORLD!!</h2>
+		 
+		 </div>
+
+		 <div class="button">
+		 	
+		 	<div class=btn><a href='aboutme.html'><button>ABOUT ME</button></a></div>
+		 	
+		 	<a htref='#'><button>CONTACT</button></a>
+		 
+		 </div>
+
+	 </div>
+		 
+		<div class="footer">
+			<p>&copy:2020 ShreyasHogade</p>
+		</div>
+		
+		
+	
+	</header>
+
+	<script>
+
+			var menu_bar = document.getElementById("menu-bar");
+			var navul = document.getElementsByTagName("ul")[0];
+
+			menu_bar.addEventListener("click", toggle_cross);
+
+			function toggle_cross(){
+				navul.classList.toggle("open");
+				menu_bar.classList.toggle("cross");
+			}
+
+
+		</script>
+			
+			
+
+
+</div>
+
+
+
+</body>
+</html>

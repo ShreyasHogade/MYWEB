@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<header>
+	<title>Skills</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/skills.css">
+
+</header>
+<body>
+
+<nav>
+
+			<div id="logo">
+				<img src="css/logo.jpg" height="40px" width=80px><a href="index.html"></a>
+			</div>
+			
+				<div id="menu-bar">
+				
+				<div id='bar1'></div> 
+				<div id='bar2'></div>
+				<div id='bar3'></div>
+			
+			</div>
+			
+			
+
+			<ul class="nav-links">
+				<li ><span class='active'></span><a href='snh.html'>HOME</a></li>
+				<li class='active'><span></span><a href='myskills.html'>MY SKILLS</a></li>
+				<li><span></span><a href='gallery.html'>ART GALLERY</a></li>
+				<li><span></span><a href='#'>RESUME</a></li>
+			</ul>
+		
+
+		</nav>
+
+
+	<div><h1>MY PROGRAMING SKILLS</h1></div>
+	<div><ul class="links">
+		<div>
+		<li><a href=#>HTML</a></li>
+		<li><a href=#>CSS</a></li>
+		<li class="big"><a href=#>BIT OF JAVASCRIPT</a></li>
+	</div>
+	<div>
+		<li><a href=#>C</a></li>
+		<li><a href=#>C++</a></li>
+	</div>
+	<div>
+		<li><a href=#>CORE JAVA</a></li>
+		<li><a href=#>PYTHON</a></li>
+	</div>	
+	</ul>
+	<div>
+		<h2 style='color:white'><span style="color:yellow">'"ART IS NOT WHAT YOU SEE,BUT WHAT MAKE OTHERS SEE."'</span><br>so I'm fond of art also.</h2>
+		<footer style="color:white"><a href="index.html"style="text-decoration: none;color:white;text-align:center;position:fixed;top:93%;left:50vw;transform:translate(-50%,-50%);padding:1vw;font-size:18px;">&copy:2020 ShreyasHogade</a></footer>
+<script>
+
+			var menu_bar = document.getElementById("menu-bar");
+			var navul = document.getElementsByTagName("ul")[0];
+
+			menu_bar.addEventListener("click", toggle_cross);
+
+			function toggle_cross(){
+				navul.classList.toggle("open");
+				menu_bar.classList.toggle("cross");
+			}
+
+
+		</script>
+
+
+		</body>
+</html>
+
+

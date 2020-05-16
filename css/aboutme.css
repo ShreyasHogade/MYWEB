@@ -1,0 +1,291 @@
+*{
+	box-sizing:box-border;
+	
+	font-family:Comic sans MS;
+
+}
+body{
+	height: 100%;
+	margin:0;
+	box-sizing: border-box;
+}
+nav{
+	width:100%;
+	height:80px;
+	position:fixed;
+     z-index:1;
+      
+	background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(nav1.jpg)
+}
+ul.nav-links{
+	float:right;
+	list-style-type:none;
+	margin-top:20px;
+	padding:10px;
+	overflow:hidden;
+	
+}
+ul li{
+	display:inline-block;
+	
+	
+}
+
+ul li a{
+	text-decoration:none;
+	font-size:15px;
+	font-family:verdana;
+	color:white;
+	padding:8px 20px;
+	border:2px solid white;
+	transition:0.6s ease;
+    border-radius:1px; 
+}
+ul li a:hover{
+	background-color:white;
+	color:black;
+}
+
+//#menu-bar{
+	display:none;
+}
+
+
+#menu-bar div{
+	background-color: black;
+	display: none;
+	width:25px;
+	height:10px;
+	margin:5px;
+	float:right;
+	position:absolute;
+	right:25px;
+	top:25px;
+	 box-shadow: 3px 3px gray;
+
+}
+#logo{
+    
+    width:100px;
+    height:50px;
+    float:left;
+	transform:translate(15px, 15px) ;
+    display:flex;
+	justify-content:space-around;
+	opacity:80%;
+	 
+}
+.profile img{
+	display:block;
+	filter:grayscale(20%);
+
+	//filter:brightness(200%);
+	width:50%;
+	height:190px;
+	width:190px;
+	border-radius:100px;
+	margin-left:auto;
+	margin-right:auto;
+	box-shadow: 3px 3px black;
+	transform:translateY(90px)
+}
+
+.bg{
+	background-image:url(back1.png);
+	background-position: center;
+	height:100%;
+	width:100%;
+	margin:0;
+	background-color: black;
+	background-repeat: no-repeat;
+}
+h1{
+	position:relative;
+	font-family:comic sans MS;
+	font-size:3em;
+	color:yellow;
+	text-align: center;
+	overflow:hidden;
+	margin:auto;
+	transform:translateY(100px);
+}
+
+.about{
+	margin:auto;
+	width:80%;
+	border:1px solid white;
+	box-sizing:border-box;
+	text-align:center;
+	padding:10px;
+	transform:translateY(120px);
+}
+
+.about img{
+	filter:brightness(80%);
+	height:15vw;
+	width:15vw;
+	float:right;
+	border-radius:80px;
+	margin:3vw 2vw 
+}
+.para{
+	font-size:25px;
+	
+	font-family:comic sans MS;
+	color:white;
+	text-align:justify;
+	text-indent:40px;
+	padding:10px 20px;
+}
+
+.foot{
+	color:white;
+
+}
+.foot a{
+	display:flex;
+	justify-content: center;
+	margin:auto;
+	text-decoration: none;
+	text-align: center;
+	font-size:20px;
+	color:white;
+	padding:150px;
+	
+	
+	
+}
+
+@media (max-width:540px)
+{
+	h1{
+		font-size:35px;
+	}
+.para{
+	font-size:15px;
+	
+	}
+	.about img{
+	
+	height:100px;
+	width:100px;
+	
+	border-radius:40px;
+}
+.foot a{
+	font-size:10px;
+}
+	
+}
+
+
+@media (min-width: 700px) and (max-width:780px)
+{
+.about img{
+	
+	height:140px;
+	width:140px;
+	
+	border-radius:60px;
+}
+h1{
+		font-size:45px;
+	}
+.para{
+	font-size:25px;
+	
+	}
+}
+@media (max-width:740px)
+{
+
+
+	nav{
+	
+	height:60px;
+	}
+
+ul.nav-links{
+	width:100%;
+	max-height:0px;
+	background-color:#333;
+	margin:0;
+	height:100vh;
+	display:block;
+	overflow:hidden;
+	position:relative;
+	-webkit-transition: 0.5s;
+    transition: 0.5s;
+    top: 0;
+    opacity: 100;
+    margin-right: 900px;
+
+}
+ul.nav-links.open{
+	margin-right: 0;
+    padding-left: 0;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    max-height: 100vh;
+    opacity: 1;
+    background-color: #333;
+
+}
+ul li{
+	display:flex;
+	justify-content: center;
+	right:0;
+	margin:auto;
+	padding:20px;
+	padding-bottom:10px ;
+	max-width:95%;
+	float:center;
+	text-align: center;
+	margin: 0 2%;
+	
+}
+
+ul li a{
+	display:flex;
+	justify-content: center;
+	max-width:100%;
+	width:100vh;
+	border:1px transparent;
+	border-bottom:1px solid rgba(0,0,0,0.3);
+	transition:0.6s ease;
+    
+}
+ul li a:hover{
+	background-color:gray;
+	color:black;
+	
+}
+
+
+#menu-bar div{
+	cursor:pointer;
+	background-color: white;
+	opacity:100;
+	display: block;
+	width:25px;
+	height:10px;
+	margin:5px;
+	float:right;
+	position:absolute;
+	right:25px;
+	top:25px;	
+}
+
+
+#logo{
+    
+    width:auto;
+    float:none;
+    margin:0;
+	transform:translateY(10px) ;
+    display:flex;
+	justify-content:center;
+	opacity:80%;
+
+}
+}
